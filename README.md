@@ -5,8 +5,8 @@
 #### Ultilize uma descricao resumida seguido de um emblema para identificar seu commit.
 |Emblemas|Valor|
 | -------- | -------- |
-|`:top:`|Atualizacao|
-|`:space_invader:`|Correcao de bug|
+|:top:|Atualizacao|
+|:space_invader:|Correcao de bug|
 
 > versao 0.0.1 alpha
 <hr>
