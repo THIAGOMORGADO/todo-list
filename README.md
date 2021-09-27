@@ -3,10 +3,10 @@
 ### Visualizar de forma geral tarefas e compromissos em listas, tendo a possibilidade de marcar ou desmarcar as tarefas concluidas.
 
 #### Ultilize uma descricao resumida seguido de um emblema para identificar seu commit.
-|Emblemas|Valor|
-| -------- | -------- |
-|:top:|Atualizacao|
-|:space_invader:|Correcao de bug|
+|Codigo|Emblema|Valor|
+| -------- | -------- | -------- |
+|`:top:`|:top:|Atualizacao|
+|`:space_invader:`|:space_invader:|Correcao de bug|
 
 > versao 0.0.1 alpha
 <hr>
