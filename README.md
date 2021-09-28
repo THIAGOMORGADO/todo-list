@@ -5,7 +5,7 @@
 
 ### Informacoes:
 
-#### Link para o figma [https://www.figma.com/file...](https://www.figma.com/file/CxRmmlxd6LQEdW0idU01Nu/todo-list-team?node-id=329%3A785)
+#### Link para o figma [https://www.figma.com/file...](https://www.figma.com/file/CxRmmlxd6LQEdW0idU01Nu/todo-list-team?node-id=0%3A1)
 
 <br>
 
