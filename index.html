@@ -2,21 +2,230 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/reset.css">
-    <title>To do - List</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <title>To do - List</title>
 </head>
 
 <body>
+  <div class="container_body">
+    <header class="header">
+      <div class="container">
+        <div class="content">
+          <div class="data">
+            <div class="day">
+              <span>12</span>
+            </div>
+            <div class="mes-ano">
+              <p id="mes">set</p>
+              <p id="ano">2021</p>
+            </div>
+          </div>
 
-    <div class="mobile">
-        <!-- 
+          <svg id="icon-lua" width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.0889 15.4171C14.3212 15.3972 12.6073 14.8058 11.2035 13.7313C9.7996 12.6569 8.78106 11.157 8.30004 9.45587C7.81901 7.75472 7.90132 5.94358 8.53466 4.29307C9.168 2.64255 10.3184 1.24127 11.8139 0.298571C11.0582 0.102129 10.2808 0.00181327 9.5 0C6.98044 0 4.56408 1.00089 2.78248 2.78249C1.00089 4.56408 0 6.98044 0 9.5C0 12.0196 1.00089 14.4359 2.78248 16.2175C4.56408 17.9991 6.98044 19 9.5 19C10.9273 18.9987 12.3355 18.6716 13.6173 18.0437C14.8991 17.4157 16.0206 16.5035 16.8964 15.3764C16.6281 15.4037 16.3586 15.4173 16.0889 15.4171Z" />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="sub-container">
+        <div class="to-do_list">
+          <div class="box_list">
+            <header class="header_list">
+              <p>Criar um Portfolio</p>
+              <div class="acoes_">
+                <svg class="acao_ acao_check" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.5556 1H5.44444C2.98985 1 1 2.98985 1 5.44444V16.5556C1 19.0102 2.98985 21 5.44444 21H16.5556C19.0102 21 21 19.0102 21 16.5556V5.44444C21 2.98985 19.0102 1 16.5556 1Z"
+                    fill="#DBDBDB" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="acao_ achao_drop" width="16" height="18" viewBox="0 0 16 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 17V1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M1 10L8 17L15 10" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </header>
+          </div>
+
+          <div class="box_list">
+            <header class="header_list">
+              <p>Aprender PHP</p>
+              <div class="acoes_">
+                <svg class="acao_ acao_check" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4.80078" y="7.19995" width="14.4" height="12" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6V18C0 19.5913 0.632141 21.1174 1.75736 22.2426C2.88258 23.3679 4.4087 24 6 24H18C19.5913 24 21.1174 23.3679 22.2426 22.2426C23.3679 21.1174 24 19.5913 24 18V6C24 4.4087 23.3679 2.88258 22.2426 1.75736C21.1174 0.632141 19.5913 0 18 0H6ZM16.476 10.4208C16.5838 10.3058 16.6679 10.1706 16.7234 10.0231C16.779 9.87556 16.8049 9.71853 16.7998 9.56097C16.7947 9.40341 16.7586 9.2484 16.6936 9.10479C16.6285 8.96118 16.5358 8.83179 16.4208 8.724C16.3058 8.61621 16.1706 8.53214 16.0231 8.47658C15.8756 8.42101 15.7185 8.39506 15.561 8.40018C15.4034 8.40531 15.2484 8.44142 15.1048 8.50645C14.9612 8.57148 14.8318 8.66416 14.724 8.7792L11.0244 12.7272L9.1968 11.1036C8.95735 10.9045 8.6499 10.8064 8.3394 10.8298C8.0289 10.8532 7.73966 10.9964 7.53279 11.2291C7.32592 11.4619 7.21761 11.7659 7.23075 12.077C7.24389 12.3881 7.37744 12.6819 7.6032 12.8964L10.3032 15.2964C10.5368 15.5039 10.8422 15.6121 11.1544 15.598C11.4665 15.5839 11.7609 15.4486 11.9748 15.2208L16.4748 10.4208H16.476Z"
+                    fill="#11EE42" />
+                </svg>
+                <svg class="acao_ achao_drop" width="16" height="18" viewBox="0 0 16 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 17V1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M1 10L8 17L15 10" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </header>
+          </div>
+
+          <div class="box_list">
+            <header class="header_list">
+              <p>Aprender Node.Js</p>
+              <div class="acoes_">
+                <svg class="acao_ acao_check" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4.80078" y="7.19995" width="14.4" height="12" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6V18C0 19.5913 0.632141 21.1174 1.75736 22.2426C2.88258 23.3679 4.4087 24 6 24H18C19.5913 24 21.1174 23.3679 22.2426 22.2426C23.3679 21.1174 24 19.5913 24 18V6C24 4.4087 23.3679 2.88258 22.2426 1.75736C21.1174 0.632141 19.5913 0 18 0H6ZM16.476 10.4208C16.5838 10.3058 16.6679 10.1706 16.7234 10.0231C16.779 9.87556 16.8049 9.71853 16.7998 9.56097C16.7947 9.40341 16.7586 9.2484 16.6936 9.10479C16.6285 8.96118 16.5358 8.83179 16.4208 8.724C16.3058 8.61621 16.1706 8.53214 16.0231 8.47658C15.8756 8.42101 15.7185 8.39506 15.561 8.40018C15.4034 8.40531 15.2484 8.44142 15.1048 8.50645C14.9612 8.57148 14.8318 8.66416 14.724 8.7792L11.0244 12.7272L9.1968 11.1036C8.95735 10.9045 8.6499 10.8064 8.3394 10.8298C8.0289 10.8532 7.73966 10.9964 7.53279 11.2291C7.32592 11.4619 7.21761 11.7659 7.23075 12.077C7.24389 12.3881 7.37744 12.6819 7.6032 12.8964L10.3032 15.2964C10.5368 15.5039 10.8422 15.6121 11.1544 15.598C11.4665 15.5839 11.7609 15.4486 11.9748 15.2208L16.4748 10.4208H16.476Z"
+                    fill="#11EE42" />
+                </svg>
+                <svg class="acao_ achao_drop" width="16" height="18" viewBox="0 0 16 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 17V1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M1 10L8 17L15 10" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </header>
+          </div>
+
+          <div class="box_list">
+            <header class="header_list">
+              <p>Aprender Next.Js</p>
+              <div class="acoes_">
+                <svg class="acao_ acao_check" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4.80078" y="7.19995" width="14.4" height="12" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6V18C0 19.5913 0.632141 21.1174 1.75736 22.2426C2.88258 23.3679 4.4087 24 6 24H18C19.5913 24 21.1174 23.3679 22.2426 22.2426C23.3679 21.1174 24 19.5913 24 18V6C24 4.4087 23.3679 2.88258 22.2426 1.75736C21.1174 0.632141 19.5913 0 18 0H6ZM16.476 10.4208C16.5838 10.3058 16.6679 10.1706 16.7234 10.0231C16.779 9.87556 16.8049 9.71853 16.7998 9.56097C16.7947 9.40341 16.7586 9.2484 16.6936 9.10479C16.6285 8.96118 16.5358 8.83179 16.4208 8.724C16.3058 8.61621 16.1706 8.53214 16.0231 8.47658C15.8756 8.42101 15.7185 8.39506 15.561 8.40018C15.4034 8.40531 15.2484 8.44142 15.1048 8.50645C14.9612 8.57148 14.8318 8.66416 14.724 8.7792L11.0244 12.7272L9.1968 11.1036C8.95735 10.9045 8.6499 10.8064 8.3394 10.8298C8.0289 10.8532 7.73966 10.9964 7.53279 11.2291C7.32592 11.4619 7.21761 11.7659 7.23075 12.077C7.24389 12.3881 7.37744 12.6819 7.6032 12.8964L10.3032 15.2964C10.5368 15.5039 10.8422 15.6121 11.1544 15.598C11.4665 15.5839 11.7609 15.4486 11.9748 15.2208L16.4748 10.4208H16.476Z"
+                    fill="#11EE42" />
+                </svg>
+                <svg class="acao_ achao_drop" width="16" height="18" viewBox="0 0 16 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 17V1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M1 10L8 17L15 10" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </header>
+          </div>
+
+          <div class="box_list">
+            <header class="header_list">
+              <p>Aprender React.Js</p>
+              <div class="acoes_">
+                <svg class="acao_ acao_check" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4.80078" y="7.19995" width="14.4" height="12" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6V18C0 19.5913 0.632141 21.1174 1.75736 22.2426C2.88258 23.3679 4.4087 24 6 24H18C19.5913 24 21.1174 23.3679 22.2426 22.2426C23.3679 21.1174 24 19.5913 24 18V6C24 4.4087 23.3679 2.88258 22.2426 1.75736C21.1174 0.632141 19.5913 0 18 0H6ZM16.476 10.4208C16.5838 10.3058 16.6679 10.1706 16.7234 10.0231C16.779 9.87556 16.8049 9.71853 16.7998 9.56097C16.7947 9.40341 16.7586 9.2484 16.6936 9.10479C16.6285 8.96118 16.5358 8.83179 16.4208 8.724C16.3058 8.61621 16.1706 8.53214 16.0231 8.47658C15.8756 8.42101 15.7185 8.39506 15.561 8.40018C15.4034 8.40531 15.2484 8.44142 15.1048 8.50645C14.9612 8.57148 14.8318 8.66416 14.724 8.7792L11.0244 12.7272L9.1968 11.1036C8.95735 10.9045 8.6499 10.8064 8.3394 10.8298C8.0289 10.8532 7.73966 10.9964 7.53279 11.2291C7.32592 11.4619 7.21761 11.7659 7.23075 12.077C7.24389 12.3881 7.37744 12.6819 7.6032 12.8964L10.3032 15.2964C10.5368 15.5039 10.8422 15.6121 11.1544 15.598C11.4665 15.5839 11.7609 15.4486 11.9748 15.2208L16.4748 10.4208H16.476Z"
+                    fill="#11EE42" />
+                </svg>
+                <svg class="acao_ achao_drop" width="16" height="18" viewBox="0 0 16 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 17V1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M1 10L8 17L15 10" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </header>
+          </div>
+
+          <div class="box_list">
+            <header class="header_list">
+              <p>Aprender Javascript</p>
+              <div class="acoes_">
+                <svg class="acao_ acao_check" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4.80078" y="7.19995" width="14.4" height="12" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6V18C0 19.5913 0.632141 21.1174 1.75736 22.2426C2.88258 23.3679 4.4087 24 6 24H18C19.5913 24 21.1174 23.3679 22.2426 22.2426C23.3679 21.1174 24 19.5913 24 18V6C24 4.4087 23.3679 2.88258 22.2426 1.75736C21.1174 0.632141 19.5913 0 18 0H6ZM16.476 10.4208C16.5838 10.3058 16.6679 10.1706 16.7234 10.0231C16.779 9.87556 16.8049 9.71853 16.7998 9.56097C16.7947 9.40341 16.7586 9.2484 16.6936 9.10479C16.6285 8.96118 16.5358 8.83179 16.4208 8.724C16.3058 8.61621 16.1706 8.53214 16.0231 8.47658C15.8756 8.42101 15.7185 8.39506 15.561 8.40018C15.4034 8.40531 15.2484 8.44142 15.1048 8.50645C14.9612 8.57148 14.8318 8.66416 14.724 8.7792L11.0244 12.7272L9.1968 11.1036C8.95735 10.9045 8.6499 10.8064 8.3394 10.8298C8.0289 10.8532 7.73966 10.9964 7.53279 11.2291C7.32592 11.4619 7.21761 11.7659 7.23075 12.077C7.24389 12.3881 7.37744 12.6819 7.6032 12.8964L10.3032 15.2964C10.5368 15.5039 10.8422 15.6121 11.1544 15.598C11.4665 15.5839 11.7609 15.4486 11.9748 15.2208L16.4748 10.4208H16.476Z"
+                    fill="#11EE42" />
+                </svg>
+                <svg class="acao_ achao_drop" width="16" height="18" viewBox="0 0 16 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 17V1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M1 10L8 17L15 10" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </header>
+          </div>
+
+          <div class="box_list">
+            <header class="header_list">
+              <p>Estudar CSS:3</p>
+              <div class="acoes_">
+                <svg class="acao_ acao_check" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4.80078" y="7.19995" width="14.4" height="12" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6V18C0 19.5913 0.632141 21.1174 1.75736 22.2426C2.88258 23.3679 4.4087 24 6 24H18C19.5913 24 21.1174 23.3679 22.2426 22.2426C23.3679 21.1174 24 19.5913 24 18V6C24 4.4087 23.3679 2.88258 22.2426 1.75736C21.1174 0.632141 19.5913 0 18 0H6ZM16.476 10.4208C16.5838 10.3058 16.6679 10.1706 16.7234 10.0231C16.779 9.87556 16.8049 9.71853 16.7998 9.56097C16.7947 9.40341 16.7586 9.2484 16.6936 9.10479C16.6285 8.96118 16.5358 8.83179 16.4208 8.724C16.3058 8.61621 16.1706 8.53214 16.0231 8.47658C15.8756 8.42101 15.7185 8.39506 15.561 8.40018C15.4034 8.40531 15.2484 8.44142 15.1048 8.50645C14.9612 8.57148 14.8318 8.66416 14.724 8.7792L11.0244 12.7272L9.1968 11.1036C8.95735 10.9045 8.6499 10.8064 8.3394 10.8298C8.0289 10.8532 7.73966 10.9964 7.53279 11.2291C7.32592 11.4619 7.21761 11.7659 7.23075 12.077C7.24389 12.3881 7.37744 12.6819 7.6032 12.8964L10.3032 15.2964C10.5368 15.5039 10.8422 15.6121 11.1544 15.598C11.4665 15.5839 11.7609 15.4486 11.9748 15.2208L16.4748 10.4208H16.476Z"
+                    fill="#11EE42" />
+                </svg>
+                <svg class="acao_ achao_drop" width="16" height="18" viewBox="0 0 16 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 17V1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M1 10L8 17L15 10" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </header>
+          </div>
+
+          <div class="box_list">
+            <header class="header_list">
+              <p>Estudar HTML:5</p>
+              <div class="acoes_">
+                <svg class="acao_ acao_check" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4.80078" y="7.19995" width="14.4" height="12" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6V18C0 19.5913 0.632141 21.1174 1.75736 22.2426C2.88258 23.3679 4.4087 24 6 24H18C19.5913 24 21.1174 23.3679 22.2426 22.2426C23.3679 21.1174 24 19.5913 24 18V6C24 4.4087 23.3679 2.88258 22.2426 1.75736C21.1174 0.632141 19.5913 0 18 0H6ZM16.476 10.4208C16.5838 10.3058 16.6679 10.1706 16.7234 10.0231C16.779 9.87556 16.8049 9.71853 16.7998 9.56097C16.7947 9.40341 16.7586 9.2484 16.6936 9.10479C16.6285 8.96118 16.5358 8.83179 16.4208 8.724C16.3058 8.61621 16.1706 8.53214 16.0231 8.47658C15.8756 8.42101 15.7185 8.39506 15.561 8.40018C15.4034 8.40531 15.2484 8.44142 15.1048 8.50645C14.9612 8.57148 14.8318 8.66416 14.724 8.7792L11.0244 12.7272L9.1968 11.1036C8.95735 10.9045 8.6499 10.8064 8.3394 10.8298C8.0289 10.8532 7.73966 10.9964 7.53279 11.2291C7.32592 11.4619 7.21761 11.7659 7.23075 12.077C7.24389 12.3881 7.37744 12.6819 7.6032 12.8964L10.3032 15.2964C10.5368 15.5039 10.8422 15.6121 11.1544 15.598C11.4665 15.5839 11.7609 15.4486 11.9748 15.2208L16.4748 10.4208H16.476Z"
+                    fill="#11EE42" />
+                </svg>
+
+                <svg class="acao_ achao_drop" width="16" height="18" viewBox="0 0 16 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 17V1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M1 10L8 17L15 10" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </header>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="acoes_todo_list">
+      <div class="acao_add">
+        <svg class="add_curs" width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40.0208" cy="40.0199" r="37.1614" fill="white" />
+          <path
+            d="M40.02 0C29.4457 0.127576 19.3404 4.38492 11.8626 11.8626C4.38492 19.3404 0.127576 29.4457 0 40.02C0.127576 50.5943 4.38492 60.6996 11.8626 68.1774C19.3404 75.6551 29.4457 79.9124 40.02 80.04C50.5943 79.9124 60.6996 75.6551 68.1774 68.1774C75.6551 60.6996 79.9124 50.5943 80.04 40.02C79.9124 29.4457 75.6551 19.3404 68.1774 11.8626C60.6996 4.38492 50.5943 0.127576 40.02 0ZM62.8886 42.8786H42.8786V62.8886H37.1614V42.8786H17.1514V37.1614H37.1614V17.1514H42.8786V37.1614H62.8886V42.8786Z"
+            fill="#22D622" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile">
+    <!-- 
          -- Escreva o codigo mobile aqui 
          -->
-    </div>
-    <script src="./assets/index.js"></script>
+  </div>
+  <script src="./assets/index.js"></script>
+
 </body>
 
 </html>
