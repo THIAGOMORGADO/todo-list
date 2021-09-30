@@ -12,3 +12,4 @@
 <hr>
 <h3 style="color: #B0C4DE;">Colaboradores:</h3>
 <strong style="color:#777f;">Rian Carlos / riancontatoprofissional@gmail.com</strong>
+<strong style="color:#777f;">Thiago Morgado / thiagomorgado91@gmail.com; </strong>
